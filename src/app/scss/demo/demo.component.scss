@@ -1,0 +1,34 @@
+@import "profile";
+
+
+$width-percent:80%;
+$border-radius :5px;
+$bg-color : pink;
+
+.panel{
+    border: 2px solid lime;
+    margin : 5px;
+    width : $width-percent;
+}
+
+@mixin border-radius ($radii)
+{
+-webkit-border-raduis:$radii;
+-moz-border-raduis:$radii;
+-ms-border-raduis:$radii;
+border-radius: $radii;
+}
+
+.small-panel{
+    @extend .panel;
+    @include border-radius($border-radius);
+    height:50px;
+background:$bg-color * 1.5; 
+}
+
+.large-panel{
+    @extend .panel;
+    @include border-radius($border-radius + 15);
+    height: 50px + 50;
+    background:$bg-color * 0.5; 
+}

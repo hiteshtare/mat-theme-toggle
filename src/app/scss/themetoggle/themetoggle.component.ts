@@ -1,14 +1,12 @@
-import { Component, Optional } from '@angular/core';
+import { Component, OnInit, Optional } from '@angular/core';
 import { MdDialog, MdDialogRef, MdSnackBar } from '@angular/material';
 
-declare var $: any;//jquery
-
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  selector: 'app-themetoggle',
+  templateUrl: './themetoggle.component.html',
+  styleUrls: ['./themetoggle.component.scss']
 })
-export class AppComponent {
+export class ThemetoggleComponent implements OnInit {
   isDarkTheme: boolean = false;
   lastDialogResult: string;
 
@@ -25,6 +23,9 @@ export class AppComponent {
     setInterval(() => {
       this.progress = (this.progress + Math.floor(Math.random() * 4) + 1) % 100;
     }, 200);
+  }
+
+  ngOnInit() {
   }
 
   openDialog() {
