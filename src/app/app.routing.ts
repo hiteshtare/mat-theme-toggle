@@ -1,9 +1,9 @@
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from "app/app.component";
-import { DemoComponent } from "app/scss/demo/demo.component";
-import { ThemetoggleComponent } from "app/scss/themetoggle/themetoggle.component";
+import { AppComponent } from 'app/app.component';
+import { DemoComponent } from 'app/scss/demo/demo.component';
+import { ThemetoggleComponent } from 'app/scss/themetoggle/themetoggle.component';
 
 const appRoutes: Routes = [
     { path: '', redirectTo: 'demo', pathMatch: 'full' },

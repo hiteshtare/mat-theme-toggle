@@ -6,15 +6,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 import { MaterialModule } from '@angular/material';
 
-import { AppComponent, DialogContent } from './app.component';
+import { AppComponent, DialogContentComponent } from './app.component';
 import { DemoComponent } from './scss/demo/demo.component';
-import { appRoutingProviders,routing } from "app/app.routing";
+import { appRoutingProviders, routing } from 'app/app.routing';
 import { ThemetoggleComponent } from './scss/themetoggle/themetoggle.component';
 
 @NgModule({
   declarations: [
-    AppComponent, DialogContent, DemoComponent, ThemetoggleComponent],
-  entryComponents: [DialogContent],
+    AppComponent, DialogContentComponent, DemoComponent, ThemetoggleComponent],
+  entryComponents: [DialogContentComponent],
   imports: [
     BrowserModule,
     FormsModule,
